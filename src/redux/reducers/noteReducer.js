@@ -1,5 +1,8 @@
 // import actions
-import { ADD_NOTE, DELETE_NOTE } from "../actions/noteActions";
+// import { ADD_NOTE, DELETE_NOTE } from "../actions/noteActions";
+
+import { createSlice } from "@reduxjs/toolkit";
+
 
 // add initial state
 const initialState = {
@@ -9,28 +12,57 @@ const initialState = {
     , createdOn: new Date()}]
 }
 
-//add reducers
-export function noteReducer(state = initialState , action){
-    switch(action.type){
-        case ADD_NOTE:
-            return {
-                ...state,
-                notes:[
-                    ...state.notes,
-                    {
-                        text:action.text,
-                        createdOn : new Date()
-                    }
-                ]
-            }
-        case DELETE_NOTE:
-            state.notes.splice(action.index,1);
-            return {
-                ...state,
-                notes: [...state.notes]
-            }
-        default:
-            return state;
+
+//  note slice & reducer using redux toolkit
+const noteSlice = createSlice({
+    name:"notes",
+    initialState : initialState,
+    reducers : {
+        add : (state , action) => {
+            state.notes.push({
+                text : action.payload , 
+                createdOn : new Date()
+            })
+        },
+
+        delete : (state , action) =>{
+            state.notes.splice(action.payload)
+        }
+
     }
-}
+})
+
+
+export const noteReducer=noteSlice.reducer;
+
+export const actions = noteSlice.actions;
+
+
+
+
+
+// //add note reducers
+// export function noteReducer(state = initialState , action){
+//     switch(action.type){
+//         case ADD_NOTE:
+//             return {
+//                 ...state,
+//                 notes:[
+//                     ...state.notes,
+//                     {
+//                         text:action.text,
+//                         createdOn : new Date()
+//                     }
+//                 ]
+//             }
+//         case DELETE_NOTE:
+//             state.notes.splice(action.index,1);
+//             return {
+//                 ...state,
+//                 notes: [...state.notes]
+//             }
+//         default:
+//             return state;
+//     }
+// }
 
