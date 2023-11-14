@@ -1,5 +1,5 @@
 // import actions
-import { ADD_TODO , TOGGLE_TODO } from "../actions/totoActions";
+import { ADD_TODO , TOGGLE_TODO } from "../actions/todoActions";
 
 // add initial state
 const initialState = {

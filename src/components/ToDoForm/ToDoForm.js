@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ToDoForm.css";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../../redux/actions/totoActions";
+import { addTodo } from "../../redux/actions/todoActions";
 
 function ToDoForm() {
   const [todoText, setTodoText] = useState("");
