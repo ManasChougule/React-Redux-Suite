@@ -26,7 +26,7 @@ const noteSlice = createSlice({
         },
 
         delete : (state , action) =>{
-            state.notes.splice(action.payload)
+            state.notes.splice(action.payload,1)
         }
 
     }
