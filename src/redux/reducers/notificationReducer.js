@@ -14,10 +14,15 @@ const notificationSlice = createSlice({
             state.message = "";
         }
     },
-    extraReducers : {
-        "todo/add" : (state , action) => {
+    // extraReducers : {
+    //     "todo/add" : (state , action) => {
+    //         state.message = "Todo is created"
+    //     }
+    // }
+    extraReducers : (builder)=>{
+        builder.addCase(actions.add , (state , action)=>{  // used builder to avoid hardcoding names 
             state.message = "Todo is created"
-        }
+        })
     }
 })
 
