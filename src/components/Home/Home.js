@@ -11,6 +11,9 @@ function Home(){
             <a href="notes" className="btn btn-warning link">
                 Note Keeper
             </a>
+            <a href="timer" className="btn btn-warning link">
+                Timer App
+            </a>
         </div>
     )
 }

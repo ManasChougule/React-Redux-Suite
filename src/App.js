@@ -10,6 +10,8 @@ import NoteForm from "./components/NoteForm/NoteForm";
 import NoteList from "./components/NoteList/NoteList";
 import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
+import { Time } from "./components/Time/Time";
+import { TimerActions } from "./components/TimerActions/TimerActions";
 
 function App() {
   return (
@@ -17,33 +19,44 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
         <Routes>
-          <Route path="" element={<Home />}>
-            
-          </Route>
-          <Route path="todo"
-          element={
-            <Fragment>
-              <NavBar />
-             <h1>To Dos</h1>
-              <TodoForm  />
-              <TodoList />
-            </Fragment>
-          }>
-
-          </Route>
-          <Route path="notes"
-          element={
-            <Fragment>
-               <NavBar />
-               <h1>Notes</h1>
-              <NoteForm  />
-              <NoteList />
-            </Fragment>
-          }>
+            <Route path="" element={<Home />}>
             
             </Route>
+
+            <Route path="todo"
+            element={
+            <Fragment>
+                <NavBar />
+                <h1>To Dos</h1>
+                <TodoForm  />
+                <TodoList />
+            </Fragment>
+            }>
+            </Route>
+
+            <Route path="notes"
+                element={
+                <Fragment>
+                    <NavBar />
+                    <h1>Notes</h1>
+                    <NoteForm  />
+                    <NoteList />
+                </Fragment>
+                }>            
+            </Route>
+
+            <Route path="timer"
+                element={
+                <Fragment>
+                    <NavBar />
+                    <h1>Timer</h1>
+                    <Time  />
+                    <TimerActions />
+                </Fragment>
+                }>
+            </Route>
+
         </Routes>
-       
         </BrowserRouter>
       </Provider>
     </div>
