@@ -12,6 +12,8 @@ import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import { Time } from "./components/Time/Time";
 import { TimerActions } from "./components/TimerActions/TimerActions";
+import { Count } from "./components/Count/Count";
+import { CounterActions } from "./components/CounterActions/CounterActions";
 
 function App() {
   return (
@@ -52,6 +54,17 @@ function App() {
                     <h1>Timer</h1>
                     <Time />
                     <TimerActions />
+                </Fragment>
+                }>
+            </Route>
+
+            <Route path="counter"
+                element={
+                <Fragment>
+                    <NavBar />
+                    <h1>Counter</h1>
+                    <Count/>
+                    <CounterActions/>
                 </Fragment>
                 }>
             </Route>

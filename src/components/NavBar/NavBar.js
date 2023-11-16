@@ -20,6 +20,9 @@ function NavBar(){
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="timer">Timer</a>
         </li> 
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="counter">Counter</a>
+        </li> 
       </ul>
     </div>
   </div>
