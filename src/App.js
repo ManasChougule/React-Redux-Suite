@@ -50,7 +50,7 @@ function App() {
                 <Fragment>
                     <NavBar />
                     <h1>Timer</h1>
-                    <Time  />
+                    <Time />
                     <TimerActions />
                 </Fragment>
                 }>
