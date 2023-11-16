@@ -6,6 +6,8 @@ import { todoReducer } from "./reducers/todoReducer";
 import { noteReducer } from "./reducers/noteReducer";
 import { notificationReducer } from "./reducers/notificationReducer";
 import { timerReducer } from "./reducers/timerReducer";
+import { counterReducer } from "./reducers/counterReducer";
+
 // const result = combineReducers({
 //     todoReducer,
 //     noteReducer
@@ -17,7 +19,8 @@ export const store = configureStore({
         todoReducer ,
         noteReducer ,
         notificationReducer  ,
-        timerReducer
+        timerReducer ,
+        counterReducer
     }
 })
 

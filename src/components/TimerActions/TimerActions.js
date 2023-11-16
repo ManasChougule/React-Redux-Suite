@@ -1,13 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 
 import { actions , timerSelector } from "../../redux/reducers/timerReducer";
-import "./TimerActions.css"
 export const TimerActions = () => {
   const dispatch = useDispatch();
   const { isRunning } = useSelector(timerSelector);
   console.log( useSelector(timerSelector));
   return (
-    <div className="actions outer-div">
+    <div className="actions outer-time-div">
       <button disabled={isRunning} onClick={() => dispatch(actions.startTimer())}>
         <img
           src="https://cdn-icons-png.flaticon.com/512/7709/7709039.png"

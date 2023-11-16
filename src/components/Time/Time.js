@@ -19,5 +19,5 @@ export const Time = () => {
 
     }, [isRunning, dispatch]);
 
-    return <b className="outer-div outer-div-time">{elapsedTime}</b>;
+    return <b className="outer-time-div">{elapsedTime}</b>;
 };
