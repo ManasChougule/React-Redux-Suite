@@ -4,19 +4,26 @@ import { useSelector , useDispatch} from "react-redux";
 import { actions } from "../../redux/reducers/todoReducer";
 import { todoSelector } from "../../redux/reducers/todoReducer";
 import { useEffect } from "react";
-
+import axios from "axios";
 function ToDoList() {
     const todos = useSelector(todoSelector);  // const todos = store.getState().todos;
     console.log(todos);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        fetch("http://localhost:4100/api/todos")
-          .then(res=>res.json())
-            .then(parsedJson=>{
-                console.log(parsedJson);
-            })
+        // fetch("http://localhost:4100/api/todos")
+        //   .then(res=>res.json())
+        //     .then(parsedJson=>{
+        //         console.log(parsedJson);
+        //     })
+        axios.get("http://localhost:4100/api/todos")
+        .then(res=>
+            {
+              console.log(res.data);
+            }
+          );
     }, []);
+
 
     return (
     <div className="container">
