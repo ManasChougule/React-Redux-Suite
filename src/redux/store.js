@@ -7,6 +7,7 @@ import { noteReducer } from "./reducers/noteReducer";
 import { notificationReducer } from "./reducers/notificationReducer";
 import { timerReducer } from "./reducers/timerReducer";
 import { counterReducer } from "./reducers/counterReducer";
+import { loggerMiddleware } from "./middlewares/loggerMiddleware";
 
 // const result = combineReducers({
 //     todoReducer,
@@ -21,6 +22,8 @@ export const store = configureStore({
         notificationReducer  ,
         timerReducer ,
         counterReducer
-    }
+    } ,
+
+    middleware : [loggerMiddleware]
 })
 
