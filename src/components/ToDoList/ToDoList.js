@@ -5,24 +5,26 @@ import { actions } from "../../redux/reducers/todoReducer";
 import { todoSelector } from "../../redux/reducers/todoReducer";
 import { useEffect } from "react";
 import axios from "axios";
+import { getInitialState } from "../../redux/reducers/todoReducer";
 function ToDoList() {
     const todos = useSelector(todoSelector);  // const todos = store.getState().todos;
     console.log(todos);
     const dispatch = useDispatch();
 
     useEffect(() => {
+        dispatch(getInitialState());
         // fetch("http://localhost:4100/api/todos")
         //   .then(res=>res.json())
         //     .then(parsedJson=>{
         //         console.log(parsedJson);
         //     })
-        axios.get("http://localhost:4100/api/todos")
-        .then(res=>
-            {
-            //   console.log(res.data);
-              dispatch(actions.setInitialState(res.data));
-            }
-          );
+        // axios.get("http://localhost:4100/api/todos")
+        // .then(res=>
+        //     {
+        //     //   console.log(res.data);
+        //       dispatch(actions.setInitialState(res.data));
+        //     }
+        //   );
     }, []);
 
 
