@@ -13,6 +13,10 @@ const todoSlice = createSlice({
     name:"todo",
     initialState:initialState,
     reducers : {
+        setInitialState : (state , action) => {
+            state.todos = [...action.payload];  // 
+        },
+
         add : (state , action) => {  // this is add action
             state.todos.push({
                 text : action.payload,
