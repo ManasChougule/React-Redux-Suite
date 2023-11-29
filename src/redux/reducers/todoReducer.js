@@ -25,6 +25,19 @@ export const getInitialState = createAsyncThunk("todo/getInitialState",
     }
 )
 
+
+export const addTodo = createAsyncThunk("todo/addTodo" , async(payload)=>{
+    const response = await fetch("http://localhost:4100/api/todos", { // this adds new todo to backend & also returns new todo to display on front end
+        method : "POST",
+        headers : { "content-type" : "application/json" },
+        body : JSON.stringify({text : payload, completed : false})
+    });
+    // console.log("*****",response.json());
+    return  response.json();
+});
+  
+  
+
 //  todo slice & reducer using redux toolkit
 const todoSlice = createSlice({
     name:"todo",
@@ -34,12 +47,12 @@ const todoSlice = createSlice({
         //     state.todos = [...action.payload];  // 
         // },
 
-        add : (state , action) => {  // this is add action
-            state.todos.push({
-                text : action.payload,
-                completed : false
-            })  
-        },
+        // add : (state , action) => {  // this is add action
+        //     state.todos.push({
+        //         text : action.payload,
+        //         completed : false
+        //     })  
+        // },
 
         toggle : (state , action) => {
             state.todos.map((todo , i) =>{
@@ -55,6 +68,10 @@ const todoSlice = createSlice({
         builder.addCase(getInitialState.fulfilled , (state , action)=>{
             state.todos = [...action.payload.data];
         })
+        .addCase(addTodo.fulfilled , (state , action)=>{
+            // console.log('action.payload',action.payload);
+            state.todos.push(action.payload);                                        
+        })
     }
 })
 
@@ -63,9 +80,6 @@ export const todoReducer=todoSlice.reducer;
 export const actions = todoSlice.actions;
 
 export const todoSelector = (state)=> state.todoReducer.todos;
-
-
-
 
 
 
