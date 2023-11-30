@@ -27,7 +27,7 @@ export const getInitialState = createAsyncThunk("todo/getInitialState",
 
 
 export const addTodo = createAsyncThunk("todo/addTodo" , async(payload)=>{
-    const response = await fetch("http://localhost:4100/api/todos", { // this adds new todo to backend & also returns new todo to display on front end
+    const response = await fetch("http://localhost:4100/api/todos/", { // this adds new todo to backend & also returns new todo to display on front end
         method : "POST",
         headers : { "content-type" : "application/json" },
         body : JSON.stringify({text : payload, completed : false})

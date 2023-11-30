@@ -1,5 +1,5 @@
 # Description:-
-Showcased the implementation of various utilities using the Redux state management library & Redux Toolkit, with a particular focus on the transition from traditional Redux to Redux Toolkit and advantages brought by Redux Toolkit. The project highlights the effective use of actions, reducers, store, selectors, and dispatchers to manage the application state within a React application.
+Implemented various utilities using the Redux state management library & Redux Toolkit, with a particular focus on the transition from traditional Redux to Redux Toolkit and advantages brought by Redux Toolkit. The project highlights the effective use of actions, reducers, store, selectors, and dispatchers to manage the application state within a React application. Also implmented advanced redux concepts like middleware , api calls , async thunk etc to fetch & store data on backend.
 
 ## Objectives:-
 #### 1. Demonstrate React-Redux Integration.
@@ -32,7 +32,6 @@ Showcased the implementation of various utilities using the Redux state manageme
  - Reset the count.
 
 ### 5. Notifications.
-
 
 ## Getting Started with Create React App
 
