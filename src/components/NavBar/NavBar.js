@@ -29,6 +29,7 @@ function NavBar() {
                         <Link to="notes"> Note </Link>
                         <Link to="timer"> Timer </Link>
                         <Link to="counter"> Counter </Link>
+                        <Link to="cmt"> CMT </Link>
                     </div>
                 </div>
             </div>

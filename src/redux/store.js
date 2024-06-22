@@ -7,6 +7,7 @@ import { noteReducer } from "./reducers/noteReducer";
 import { notificationReducer } from "./reducers/notificationReducer";
 import { timerReducer } from "./reducers/timerReducer";
 import { counterReducer } from "./reducers/counterReducer";
+import { cmtReducer } from "./reducers/cmtReducer";
 import { loggerMiddleware } from "./middlewares/loggerMiddleware";
 
 // const result = combineReducers({
@@ -21,7 +22,8 @@ export const store = configureStore({
         noteReducer ,
         notificationReducer  ,
         timerReducer ,
-        counterReducer
+        counterReducer ,
+        cmtReducer
     } ,
 
     middleware : [ ...getDefaultMiddleware() ,loggerMiddleware]

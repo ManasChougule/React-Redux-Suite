@@ -17,6 +17,9 @@ function Home(){
             <Link to="counter" className="btn btn-warning link">
                 Counter App
             </Link>
+            <Link to="cmt" className="btn btn-warning link">
+                Customer Management Tool
+            </Link>
         </div>
     )
 }

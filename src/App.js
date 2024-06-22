@@ -12,7 +12,7 @@ import { Todo } from "./pages/Todo";
 import { Notes } from "./pages/NotesKeeper";
 import { Timer } from "./pages/Timer";
 import { Counter } from "./pages/Counter";
-
+import { CMT } from "./pages/CMT";
 export default function App() {
     const router = createBrowserRouter([
       {
@@ -23,7 +23,8 @@ export default function App() {
             { path: "/todo", element: <Todo /> },
             { path: "/notes", element: <Notes /> },
             { path: "/timer", element: <Timer /> },
-            { path: "/counter", element: <Counter /> }
+            { path: "/counter", element: <Counter /> },
+            { path: "/cmt", element: <CMT /> }
         ]
       }
     ]);
