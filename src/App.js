@@ -13,6 +13,7 @@ import { Notes } from "./pages/NotesKeeper";
 import { Timer } from "./pages/Timer";
 import { Counter } from "./pages/Counter";
 import { CMT } from "./pages/CMT";
+import { CricketScoreKeeper } from './pages/CricketScoreKeeper';
 export default function App() {
     const router = createBrowserRouter([
       {
@@ -24,7 +25,8 @@ export default function App() {
             { path: "/notes", element: <Notes /> },
             { path: "/timer", element: <Timer /> },
             { path: "/counter", element: <Counter /> },
-            { path: "/cmt", element: <CMT /> }
+            { path: "/cmt", element: <CMT /> },
+            { path: "/scoreKeeper", element: <CricketScoreKeeper /> }
         ]
       }
     ]);

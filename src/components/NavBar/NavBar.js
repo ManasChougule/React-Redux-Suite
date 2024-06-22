@@ -9,14 +9,6 @@ function NavBar() {
     const toggleNavbar = () => {  // Function to toggle the navbar collapse state
         setCollapsed(!isCollapsed);
     };
-    console.log(isCollapsed);
-
-    // const navLinks = document.querySelector(".nav-links");
-    // const toggleNavbar = () => {
-    //     if (navLinks) {  
-    //         navLinks.classList.toggle("collapsed");  // Toggle the 'collapsed' class to show/hide the links
-    //     }
-    // };
 
     return (
         <>
@@ -26,10 +18,11 @@ function NavBar() {
                     {  <button className={`navbar-toggler`} onClick={toggleNavbar}> &#9776; </button>}
                     <div  className={`nav-links ${isCollapsed ? 'collapsed' : ''}`}>
                         <Link to="todo"> To Do </Link>
-                        <Link to="notes"> Note </Link>
+                        <Link to="notes"> Note Keeper</Link>
                         <Link to="timer"> Timer </Link>
                         <Link to="counter"> Counter </Link>
                         <Link to="cmt"> CMT </Link>
+                        <Link to="scoreKeeper"> Score Keeper </Link>
                     </div>
                 </div>
             </div>

@@ -8,6 +8,7 @@ import { notificationReducer } from "./reducers/notificationReducer";
 import { timerReducer } from "./reducers/timerReducer";
 import { counterReducer } from "./reducers/counterReducer";
 import { cmtReducer } from "./reducers/cmtReducer";
+import { scoreKeeperReducer } from "./reducers/cricketScoreKeeperReducer";
 import { loggerMiddleware } from "./middlewares/loggerMiddleware";
 
 // const result = combineReducers({
@@ -23,7 +24,8 @@ export const store = configureStore({
         notificationReducer  ,
         timerReducer ,
         counterReducer ,
-        cmtReducer
+        cmtReducer ,
+        scoreKeeperReducer
     } ,
 
     middleware : [ ...getDefaultMiddleware() ,loggerMiddleware]
