@@ -20,8 +20,8 @@ function Home(){
             <Link to="cmt" className="btn btn-warning link">
                 Customer Management Tool
             </Link>
-            <Link to="scoreKeeper" className="btn btn-warning link">
-                Cricket Score Keeper
+            <Link to="blogs" className="btn btn-warning link">
+                React Blogs
             </Link>
         </div>
     )

@@ -26,7 +26,8 @@ export default function App() {
             { path: "/timer", element: <Timer /> },
             { path: "/counter", element: <Counter /> },
             { path: "/cmt", element: <CMT /> },
-            { path: "/scoreKeeper", element: <CricketScoreKeeper /> }
+            { path: "/scoreKeeper", element: <CricketScoreKeeper /> },
+            { path: "/blogs", element: <CricketScoreKeeper /> }
         ]
       }
     ]);

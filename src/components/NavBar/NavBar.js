@@ -23,6 +23,7 @@ function NavBar() {
                         <Link to="counter"> Counter </Link>
                         <Link to="cmt"> CMT </Link>
                         <Link to="scoreKeeper"> Score Keeper </Link>
+                        <Link to="blogs"> React Blogs </Link>
                     </div>
                 </div>
             </div>

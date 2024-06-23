@@ -33,6 +33,17 @@ Implemented various utilities using the Redux state management library & Redux T
 
 ### 5. Notifications.
 
+### 6. Customer Management Tool:
+ - Form Submission and Record Display.
+ - CheckIn - CheckOut Feature.
+ - Remove Entry.
+ - Guest Count Validation.
+
+### 7. Cricket Score Keeper:
+ - Update Score & Wickets Status.
+ - Add commentary.
+ - Display Score History.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
