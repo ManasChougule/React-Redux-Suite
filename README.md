@@ -44,6 +44,12 @@ Implemented various utilities using the Redux state management library & Redux T
  - Add commentary.
  - Display Score History.
 
+### 8. Blogging Application:
+ - Create Blog: User can create new blog posts by providing a title and content.
+ - Display Blogs: App displays a list of submitted blogs with newly added blog at top fo the list.
+ - Update Blog : User can update blog , save & discard changes.
+ - Delete Blog etc.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

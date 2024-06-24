@@ -1,25 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-const INITIAL_STATE = { blogs: [] };
-
+const initialState = { blogs: [] };
 
 const blogsSlice = createSlice({
     name:"react_blogs",
-    initialState : INITIAL_STATE,
+    initialState : initialState,
     reducers : {
-        addBlog: (state, action) => {
-            state.blogs = [action.payload, ...state.blogs];
-        },
-        removeBlog: (state, action) => {
-            state.blogs = state.blogs.filter((blog, index) => index !== action.payload);
-        },
         updateBlog: (state, action) => {
             state.blogs = state.blogs.map((blog, index) =>
                 index === action.payload.index ? { ...blog, content: action.payload.new_content, title: action.payload.new_title } : blog
             );
         },
         reloadBlogs: (state, action) => {
+            console.log('reloadBlogs called',action.payload)
             state.blogs = [...action.payload];
         }
     }
