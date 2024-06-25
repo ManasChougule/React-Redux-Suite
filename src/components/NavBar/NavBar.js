@@ -24,6 +24,7 @@ function NavBar() {
                         <Link to="cmt"> CMT </Link>
                         <Link to="scoreKeeper"> Score Keeper </Link>
                         <Link to="blogs"> React Blogs </Link>
+                        <Link to="shoppingCart"> Shopping Cart </Link>
                     </div>
                 </div>
             </div>

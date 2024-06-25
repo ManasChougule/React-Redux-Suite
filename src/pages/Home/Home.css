@@ -26,11 +26,12 @@
 
 
 .home-container{
-    
     display: flex;
     height: 100vh;
     justify-content: space-around;
     align-items: center;
+    flex-wrap : wrap;
+    /* overflow-y: scroll !important; */
 }
 
 
@@ -39,8 +40,9 @@
   .home-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     align-items: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -48,14 +50,13 @@
     display: flex !important;
     font-size: x-large !important; 
     font-weight: bold !important;
-    margin:15px; /* applied when shrinks */
+    margin:30px; 
     height: 100%;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
-    background-color: #23f32d; /* Add background color as needed */
+    height: 250px;
+    width: 250px;
+    background-color: #23f32d; 
 }
-
 
 

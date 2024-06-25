@@ -15,6 +15,7 @@ import { Counter } from "./pages/Counter";
 import { CMT } from "./pages/CMT";
 import { CricketScoreKeeper } from './pages/CricketScoreKeeper';
 import { Blogs } from './pages/Blogs';
+import { ShoppingCart } from './pages/ShoppingCart';
 export default function App() {
     const router = createBrowserRouter([
       {
@@ -28,7 +29,8 @@ export default function App() {
             { path: "/counter", element: <Counter /> },
             { path: "/cmt", element: <CMT /> },
             { path: "/scoreKeeper", element: <CricketScoreKeeper /> },
-            { path: "/blogs", element: <Blogs /> }
+            { path: "/blogs", element: <Blogs /> },
+            { path: "/shoppingCart", element: <ShoppingCart /> }
         ]
       }
     ]);

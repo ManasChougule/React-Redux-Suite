@@ -49,6 +49,13 @@ Implemented various utilities using the Redux state management library & Redux T
  - Display Blogs: App displays a list of submitted blogs with newly added blog at top fo the list.
  - Update Blog : User can update blog , save & discard changes.
  - Delete Blog etc.
+ - Implemented real time updates functionality using firebase.
+
+### 9. Shopping Cart:
+ - Add items in cart
+ - Remove items from cart
+ - Show Cart
+ - Clear Cart etc.
 
 ## Getting Started with Create React App
 

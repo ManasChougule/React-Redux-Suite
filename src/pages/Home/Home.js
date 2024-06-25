@@ -26,6 +26,9 @@ function Home(){
             <Link to="blogs" className="btn btn-warning link">
                 React Blogs
             </Link>
+            <Link to="shoppingCart" className="btn btn-warning link">
+                Shopping Cart
+            </Link>
         </div>
     )
 }
