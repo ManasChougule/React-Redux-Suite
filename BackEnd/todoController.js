@@ -12,11 +12,12 @@ const todos=[
 ]
 
 module.exports.get=(req, res)=>{
-    console.log("get called")
-    return res.end(JSON.stringify(todos));
+    return res.end(JSON.stringify(todos));  
 }
 
-module.exports.addTodo=(req, res)=>{
-    console.log("addTodo called");
+module.exports.addTodo = (req, res) => {
+    const newTodo = req.body;
+    todos.push(newTodo);
+    console.log('&&&',todos)
     return res.end(JSON.stringify(todos));
-}
+};
