@@ -16,7 +16,6 @@ server.use((req, res, next) => {
 
 // Serve static files from the React app
 server.use(express.static(path.join(__dirname, '..', 'FrontEnd', 'build')));
-console.log('called called')
 server.use("/api/todos/", todoRoutes.router);
 
 // Catchall handler to serve the React app for any unknown routes

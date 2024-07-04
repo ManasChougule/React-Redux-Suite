@@ -8,7 +8,6 @@ import axios from "axios";
 import { getInitialState } from "../../redux/reducers/todoReducer";
 function ToDoList() {
     const todos = useSelector(todoSelector);  // const todos = store.getState().todos;
-    console.log(todos);
     const dispatch = useDispatch();
 
     useEffect(() => {

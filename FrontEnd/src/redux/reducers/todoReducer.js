@@ -39,7 +39,6 @@ const todoSlice = createSlice({
   extraReducers: (builder) => {
     builder
     .addCase(getInitialState.fulfilled, (state, action) => {
-        console.log('88',action.payload)
       state.todos = [...action.payload];
     })
     .addCase(addTodo.fulfilled, (state, action) => {
