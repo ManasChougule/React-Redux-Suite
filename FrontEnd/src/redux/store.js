@@ -32,6 +32,6 @@ export const store = configureStore({
         shoppingCartReducer
     } ,
 
-    middleware : [ ...getDefaultMiddleware() ,loggerMiddleware]
+    middleware :  (getDefaultMiddleware) => [...getDefaultMiddleware(), loggerMiddleware]
 })
 

@@ -1,10 +1,5 @@
 /* NavBar.css */
-
-
-
 .navbar {
-    /* display: flex; */
-    /* justify-content: space-around; */
     height: 70px;
     background-color: #49d2ded3;
     padding-left: 20px;
@@ -12,17 +7,15 @@
     font-weight: bold;
 }
 
-.navbar_home_icon{
-    /* position: fixed; */
+.navbar_home_icon {
+    display: inline-block;
+    line-height: 1; /* Adjust line height to reduce space */
 }
-
 
 .navbar a:hover {
     transition: color 0.4s;
     color: rgb(4, 138, 26);
 }
-
-
 
 .navbar_toggle_helper{
     width: 350px;
@@ -33,7 +26,6 @@
     display: none;
 }
 
-
 .nav-links {
     width: 100%;
     margin-left: -200%;
@@ -43,13 +35,12 @@
     align-items: flex-start;
 }
 
-
 .nav-links.collapsed {
     display: block;
 }
 
 .nav-links a{
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 @media (max-width: 768px) {

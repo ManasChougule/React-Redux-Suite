@@ -4,16 +4,27 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
-      "start:frontend": "npm start --prefix frontend",
-      "start:backend": "npm run dev --prefix backend"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+        "start:frontend": "npm start --prefix frontend",
+        "start:backend": "npm run dev --prefix backend"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "concurrently": "^7.6.0"
+        "concurrently": "^7.6.0"
+    },
+    "dependencies": {
+        "@emotion/styled": "^11.14.0",
+        "@mui/material": "^6.4.5",
+        "@reduxjs/toolkit": "^2.5.1",
+        "axios": "^1.7.9",
+        "firebase": "^11.3.1",
+        "react-redux": "^9.2.0",
+        "react-router-dom": "^7.2.0",
+        "react-scripts": "^5.0.1",
+        "redux": "^5.0.1",
+        "web-vitals": "^4.2.4"
     }
-  }
-  
+}

@@ -13,7 +13,12 @@ function NavBar() {
     return (
         <>
             <div className="navbar">
-                <Link className="navbar_home_icon" to="/"> Skill Builder Suite </Link>
+                <Link className="navbar_home_icon" to="/">         
+                    React<br />
+                    &nbsp;&nbsp;&nbsp;Redux<br />
+                    Suite 
+                </Link>
+
                 <div className="navbar_toggle_helper">
                     {  <button className={`navbar-toggler`} onClick={toggleNavbar}> &#9776; </button>}
                     <div  className={`nav-links ${isCollapsed ? 'collapsed' : ''}`}>
